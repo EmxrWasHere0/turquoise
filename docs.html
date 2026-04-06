@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>TurquoiseLinux</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #00535e;
+}
+
+/* SOL KISIM */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.os-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* SAĞ MENÜ */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    font-size: 72px;
+}
+.container {
+  display: flex;            /* Yatayda yan yana hizalama */
+  justify-content: space-between; /* Boşlukları eşit dağıt */
+  width: 80%;               /* Div sayfa genişliğinin %80'i */
+  margin: 0 auto;           /* Ortalamak için otomatik margin */
+  padding: 10px;
+}
+
+.content {
+  flex: 1;                  /* İçerikler eşit genişlikte */
+  margin: 0 10px;           /* İçerikler arası boşluk */
+  padding: 20px 0;
+}
+
+.spacer {
+  flex: 1;                  /* Kenar boşlukları */
+}
+
+.ss {
+    width: 100%;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-left">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="os-name">TurquoiseLinux</div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="photos.html">Photos</a>
+        <a href="changelog.html">Changelog</a>
+        <a href="docs.html">Docs</a>
+    </nav>
+</header>
+<div class="hero">
+    <h3>ye i aint writing shi here read arch's docs</h3>
+</div>
+<div class="hero">
+    <p><b>&copy; 2026</b> Lex Technologies.</p>
+</div>
+</body>

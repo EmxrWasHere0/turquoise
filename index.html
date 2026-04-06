@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>TurquoiseLinux</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #00535e;
+}
+
+/* SOL KISIM */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.os-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* SAĞ MENÜ */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    font-size: 72px;
+}
+.container {
+  display: flex;            /* Yatayda yan yana hizalama */
+  justify-content: space-between; /* Boşlukları eşit dağıt */
+  width: 80%;               /* Div sayfa genişliğinin %80'i */
+  margin: 0 auto;           /* Ortalamak için otomatik margin */
+  padding: 10px;
+}
+
+.content {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.ss {
+    width: 100%;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-left">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="os-name">TurquoiseLinux</div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="photos.html">Photos</a>
+        <a href="changelog.html">Changelog</a>
+        <a href="docs.html">Docs</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>TurquoiseLinux<br>Good as it's color.</h1>
+    <h2><i>Freedom of seas, beauty of turquoise.<br>Now it's an operating system!</i></h2>
+</section>
+
+<div class="container">
+    <div class="content">
+        <h3>What is TurquoiseLinux?</h3>
+        <p>TurquoiseLinux (referred to as TurkuazLinux in Turkish) is an Arch-based Linux operating system designed with a focus on maximum hardware compatibility. Its primary goal is to provide a smooth, high-performance, and stable experience for users on modern hardware. In this respect, it aims to serve as an alternative to Turkey’s most popular Linux distribution, Pardus. </p> <p> TurquoiseLinux is still under active development and testing. However, the Lex Technologies team strives to release the operating system in a minimalist and lightweight form, with as few Arch packages and dependencies as possible. This ensures that users can install and run only the software they truly need, making their Arch-based Linux experience faster, cleaner, and more efficient. </p> <p> Moreover, TurquoiseLinux is intended to provide strong community support and continuous updates, making it suitable for both daily use and development environments. Our goal is to offer a reliable, flexible, and modern Linux alternative for users in Turkey and beyond, emphasizing usability, performance, and adaptability to a wide range of hardware. </p>
+    </div>
+    <div class="content">
+        <img class="ss" src="ss1.png">
+        <p><i>This is for illustrative purposes only. The actual product may look different.<br>TurquoiseLinux, with 'Turkuaz' wallpaper.</i></p>
+    </div>
+</div>
+<div class="spacer"></div>
+<div class="container">
+    <div class="content">
+        <img class="ss" src="ss2.png">
+        <p><i>This photo is NOT from TurquoiseLinux.<br>This is for illustrative purposes only. The actual product may look different.<br>AquaMarine, in language selection page and AquaMarine's source files.</i></p>
+    </div>
+    <div class="content">
+        <h3>AquaMarine</h3>
+        <p>AquaMarine is the custom installer wizard for TurquoiseLinux. It combines the best of both worlds: like Calamares, it guides users through the installation process step by step, while also operating inside a terminal, similar to archinstall.<br><br>Although its primary function is straightforward—installing TurquoiseLinux much like a standard Arch Linux setup—AquaMarine also handles certain system-specific file configurations automatically, making the installation process smoother and more tailored to TurquoiseLinux users.<br><br>In essence, AquaMarine provides a user-friendly, efficient, and semi-automated installation experience, allowing both beginners and advanced users to set up TurquoiseLinux quickly while maintaining flexibility and control over their system.</p>
+    </div>
+</div>
+<div class="container">
+    <div class="content">
+        <h3>Why KDE Plasma?</h3>
+        <p>Compared to its competitors, KDE Plasma provides a more user-friendly desktop experience while still offering extensive customization options. Unlike Pardus, which primarily uses GNOME and XFCE, TurquoiseLinux with KDE Plasma is especially welcoming for users transitioning from other operating systems, offering a familiar and intuitive interface without compromising on power or flexibility.<br><br>This combination of ease of use and versatility makes TurquoiseLinux an attractive choice for both newcomers and experienced Linux users who want a modern, polished desktop environment.<br><br>But don't worry, we are aiming to configure AquaMarine to actually make user choose their own desktop enviroment like KDE Plasma, GNOME, Cinnamon (or tiling window manager like Hyprland, Sway).</p>
+    </div>
+    <div class="content">
+        <img class="ss" src="ss3.png">
+        <p><i>This is for illustrative purposes only. The actual product may look different.<br>TurquoiseLinux, with 'Turkuaz' wallpaper and showing KDE Plasma versions.</i></p>
+    </div>
+</div>
+<div class="container">
+    <div class="content">
+        <img class="ss" src="ss4.png">
+        <p><i>This photo is NOT from TurquoiseLinux.<br>This is for illustrative purposes only. The actual product may look different.<br>TurquoiseLinux, in GRUB bootloader inside of a QEmu virtual machine.</i></p>
+    </div>
+    <div class="content">
+        <h2>Compability</h2>
+        <p>As of now, TurquoiseLinux is only compatible with x86-64 systems using UEFI. However, we are committed to expanding compatibility, aiming to support both UEFI and BIOS systems, and potentially even ARM processors in the future.<br><br>TurquoiseLinux live media comes with SysLinux and GRUB, and the installer will automatically set up GRUB on your system if your hardware supports it, ensuring a smooth and reliable boot process.</p>
+    </div>
+</div>
+<div class="hero">
+    <h1>What's Next?</h1>
+    <p>As Lex Technologies, we are committed to keeping TurquoiseLinux continuously updated, ensuring it remains accessible, user-friendly, and compatible with every Linux user and hardware configuration.</p>
+</div>
+<div class="hero">
+    <p><b>&copy; 2026</b> Lex Technologies.</p>
+</div>
+
+</body>
+</html>
